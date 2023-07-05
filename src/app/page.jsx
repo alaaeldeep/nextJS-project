@@ -2,7 +2,12 @@ import Image from "next/image";
 import Hero from "public/hero.png";
 
 import styles from "./page.module.css";
+import Button from "../components/button/Button";
 
+export const metadata = {
+    title: "Home",
+    description: "Alaada home page",
+};
 export default function Home() {
     return (
         <div className={styles.container}>
@@ -14,8 +19,7 @@ export default function Home() {
                     Turning your Idea into Reality. We bring together the teams
                     from the global tech industry.
                 </p>
-                {/*   <Button url="/portfolio" text="" /> */}
-                <button className={styles.button}>See Our Works</button>
+                <Button url="/portfolio" text="See Our Works" />
             </div>
             <div className={styles.item}>
                 <Image src={Hero} alt="" className={styles.img} />
