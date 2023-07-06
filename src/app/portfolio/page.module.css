@@ -34,6 +34,7 @@
     bottom: 10px;
     font-size: 40px;
     font-weight: bold;
+    color: #bbb;
 }
 .item:hover .title {
     color: #53c28b;
